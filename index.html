@@ -1,147 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- daisy cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script script src="https://cdn.tailwindcss.com"></script>
     <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Hockeys-main</title>
     <!-- tailwind custom link -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              rotate:{
-                'rotate':{
-                  '100':'100deg',
-                }
+      tailwind.config = {
+        theme: {
+          extend: {
+            rotate:{
+              'rotate':{
+                '100':'100deg',
               }
-              colors: {
-                clifford: '#da373d',
-              }
+            }
+            colors: {
+              clifford: '#da373d',
             }
           }
         }
-      </script>
+      }
+    </script>
     <!-- custom css -->
     <style>
-        .font-manrope{
-        font-family: 'Manrope', sans-serif;
-    }
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="font-manrope">
+  <body class="font-manrope">
     <!-- navbar section -->
     <nav class="container mx-auto">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                    
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 font-bold">
-                <li><a class="text-[#FF4240]">Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-                
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <a class=" pr-6 "><i class="fa-solid fa-magnifying-glass lg:block hidden"></i></a>
-              <a class="btn bg-[#FF4240] text-white text-xl">Get Ticket</a>
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
+          <a class="btn btn-ghost text-4xl font-extrabold"
+            >Hockey<span class="text-[#FF4240]">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-bold">
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="pr-6"
+            ><i class="fa-solid fa-magnifying-glass lg:block hidden"></i
+          ></a>
+          <a class="btn bg-[#FF4240] text-white text-xl">Get Ticket</a>
+        </div>
+      </div>
     </nav>
     <!-- header section -->
     <header class="container mx-auto mt-14">
-        <div class="carousel w-full">
-            <!-- first slider -->
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="lg:w-full "  />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              
-              </div>
-            </div> 
+      <div class="carousel w-full">
+        <!-- first slider -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="lg:w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-            <!-- header text -->
-            <div class=" relative ">
-                <div class="  bg-black absolute lg:right-0 lg: lg:bottom-0 lg:mr-8 lg:mb-8 sm:mt-2 rounded-xl">
-                    <div class="p-8  ">
-                        <h3 class="text-white text-2xl font-extrabold mb-4">Meet all the heroes from the field</h3>
-                         <p class="text-[#FFFFFF99] font-medium w-[500px]">One of the best parts of my job is getting to meet amazing people who are doing amazing things world better without fame or recognition.</p>
-                    </div>
-                </div>
-            </div>
-            
+        </div>
+      </div>
+      <!-- header text -->
+      <div class="relative">
+        <div
+          class="bg-black absolute lg:right-0 lg: lg:bottom-0 lg:mr-8 lg:mb-8 sm:mt-2 rounded-xl"
+        >
+          <div class="p-8">
+            <h3 class="text-white text-2xl font-extrabold mb-4">
+              Meet all the heroes from the field
+            </h3>
+            <p class="text-[#FFFFFF99] font-medium w-[500px]">
+              One of the best parts of my job is getting to meet amazing people
+              who are doing amazing things world better without fame or
+              recognition.
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main class="container mx-auto ">
-        <!-- Professional Hockeys Club -->
+    <main class="container mx-auto">
+      <!-- Professional Hockeys Club -->
       <section class="pt-52 lg:pt-8">
-      
-        <div class=" lg:mt-32 ">
-            <h1 class=" sm:text-base lg:text-4xl text-center text-[#131318] mb-6 ">Professional Hockeys Club</h1>
-            <p class="text-[#13131899] sm:w-[292px] lg:w-[607px] mx-auto pb-4">The Professional Hockey Club, an emblem of excellence in the realm of ice hockey, stands as a testament to the sport's rich legacy and enduring passion. Renowned for</p>
+        <div class="lg:mt-32">
+          <h1 class="sm:text-base lg:text-4xl text-center text-[#131318] mb-6">
+            Professional Hockeys Club
+          </h1>
+          <p class="text-[#13131899] sm:w-[292px] lg:w-[607px] mx-auto pb-4">
+            The Professional Hockey Club, an emblem of excellence in the realm
+            of ice hockey, stands as a testament to the sport's rich legacy and
+            enduring passion. Renowned for
+          </p>
         </div>
-        <div class=" grid gap-40 grid-cols-1 lg:grid-cols-4 items-center justify-center lg:mt-12 lg:px-28">
+        <div
+          class="grid gap-40 grid-cols-1 lg:grid-cols-4 items-center justify-center lg:mt-12 lg:px-28"
+        >
           <!-- porges-bar first -->
-           <div class=" space-y-5">
-             <div class="radial-progress text-[#ff4240] rotate-180 " style="--value:87;" role="progressbar"><span class="-rotate-180">87%</span></div>
-             <h4 class=" text-xl font-semibold ">Prayer Facility</h4>
-             <p class="text-[#13131899] ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <div class="space-y-5">
+            <div
+              class="radial-progress text-[#ff4240] rotate-180"
+              style="--value: 87"
+              role="progressbar"
+            >
+              <span class="-rotate-180">87%</span>
+            </div>
+            <h4 class="text-xl font-semibold">Prayer Facility</h4>
+            <p class="text-[#13131899]">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
           </div>
-           <!-- porges-bar second -->
-           <div class="space-y-5 ">
-            <div class="radial-progress text-[#49d293] rotate-90 " style="--value:95;" role="progressbar"><span class="-rotate-90">95%</span></div>
-            <h4 class=" text-xl font-semibold ">Prayer Facility</h4>
-            <p class="text-[#13131899] ">Amet consectetur. Condimentum dignissim adipiscing .</p>
-           </div>
-            <!-- porges-bar third -->
-           <div>
-            <div class="radial-progress text-[#ffb546] rotate-180 " style="--value:90;" role="progressbar"><span class="-rotate-180">90%</span></div>
-            <h4 class=" text-xl font-semibold ">Prayer Facility</h4>
-            <p class="text-[#13131899] ">Amet consectetur. Condimentum dignissim adipiscing .</p>
-           </div>
-            <!-- porges-bar four -->
+          <!-- porges-bar second -->
+          <div class="space-y-5">
+            <div
+              class="radial-progress text-[#49d293] rotate-90"
+              style="--value: 95"
+              role="progressbar"
+            >
+              <span class="-rotate-90">95%</span>
+            </div>
+            <h4 class="text-xl font-semibold">Prayer Facility</h4>
+            <p class="text-[#13131899]">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <!-- porges-bar third -->
           <div>
-            <div class="radial-progress text-[#ff4240] rotate-90 " style="--value:80;" role="progressbar"><span class="-rotate-90">80%</span></div>
-            <h4 class=" text-xl font-semibold ">Prayer Facility</h4>
-            <p class="text-[#13131899] ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <div
+              class="radial-progress text-[#ffb546] rotate-180"
+              style="--value: 90"
+              role="progressbar"
+            >
+              <span class="-rotate-180">90%</span>
+            </div>
+            <h4 class="text-xl font-semibold">Prayer Facility</h4>
+            <p class="text-[#13131899]">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <!-- porges-bar four -->
+          <div>
+            <div
+              class="radial-progress text-[#ff4240] rotate-90"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="-rotate-90">80%</span>
+            </div>
+            <h4 class="text-xl font-semibold">Prayer Facility</h4>
+            <p class="text-[#13131899]">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
           </div>
         </div>
       </section>
 
+      <!-- Program Sections -->
+      <section class="mt-28 space-y-2 lg:space-y-5">
+        <div class="text-center space-y-4">
+          <h3 class="text-4xl font-extrabold">Program Sections</h3>
+          <p class="text-[#13131863]">
+            It seems like your request is a bit unclear. If you're asking for a
+            paragraph about program
+          </p>
+        </div>
+
+        <!-- grid card-section -->
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-6"
+        >
+          <!-- gallery-card-1 -->
+          <div
+            class="relative lg:w-[572px] lg:h-[335px] text-start col-span-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-auto lg:w-[573px] lg:h-[338px] bg-cover bg-center"
+              src="Images/2.png"
+              alt=""
+            />
+            <div
+              class="p-6 lg:pt-28 lg:pl-10 lg:pb-12 space-y-2 lg:space-y-5 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-50%] translate-y-[-50%] text-white bg-[#13131880]"
+            >
+              <h3
+                class="pt-5 text-xl font-medium text-white lg:text-3xl lg:font-extrabold"
+              >
+                Junior Program
+              </h3>
+              <p class="font-medium">
+                It seems like there might be a slight typo in your request, as
+                "Hockeys Club" is not clear.
+              </p>
+              <button
+                class="text-center px-5 border-0 btn bg-[#FF4240] text-xl font-bold"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <!-- gallery-card-2 -->
+          <div
+            class="relative lg:w-[572px] lg:h-[335px] text-start col-span-3 overflow-hidden"
+          >
+            <img
+              class="sm:w-full sm:h-auto lg:w-[573px] lg:h-[338px] bg-cover bg-center"
+              src="Images/3.png"
+              alt=""
+            />
+            <div
+              class="p-6 lg:pt-28 lg:pl-10 lg:pb-12 space-y-2 lg:space-y-5 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-50%] translate-y-[-50%] text-white bg-[#13131880]"
+            >
+              <h3
+                class="text-white text-xl font-medium lg:text-3xl lg:font-extrabold"
+              >
+                Teenager Program
+              </h3>
+              <p class="font-medium">
+                Our Teenager Program is designed to provide a dynamic and
+                engaging environment for young individuals to foster personal
+                growth.
+              </p>
+              <button
+                class="text-center px-5 border-0 btn bg-[#FF4240] text-xl font-bold"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- gallery-card-3 -->
+        <div class="flex flex-col lg:flex-row justify-center items-center">
+          <div
+            class="relative lg:w-[1170px] lg:h-[450px] text-start col-span-3 overflow-hidden"
+          >
+            <img
+              class="sm:w-full sm:h-auto lg:w-[1170px] lg:h-[450px] bg-cover bg-center"
+              src="Images/4.png"
+              alt=""
+            />
+            <div
+              class="p-6 lg:pt-[220px] lg:pl-10 lg:pb-12 space-y-2 lg:space-y-5 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-50%] translate-y-[-50%] text-white bg-[#13131880]"
+            >
+              <h3
+                class="text-white text-xl font-medium lg:text-3xl lg:font-extrabold"
+              >
+                Professional Program
+              </h3>
+              <p class="lg:w-[520px] font-medium">
+                Our professional hockey program skills, strategic gameplay, and
+                teamwork for athletes aspiring to excel in the competitive world
+                of hockey.
+              </p>
+              <button
+                class="text-center px-5 border-0 btn bg-[#FF4240] lg:text-xl font-bold"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
-
-</body>
+    <footer></footer>
+  </body>
 </html>
