@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -102,72 +102,84 @@
           <a class="pr-6"
             ><i class="fa-solid fa-magnifying-glass lg:block hidden"></i
           ></a>
-          <a class="btn bg-[#FF4240] text-white text-xl">Get Ticket</a>
+          <a class="btn bg-[#FF4240] text-white lg:text-xl">Get Ticket</a>
         </div>
       </div>
     </nav>
     <!-- header section -->
-    <header class="container mx-auto mt-14">
-      <div class="carousel w-full">
-        <!-- first slider -->
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="lg:w-full" />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
-      <!-- header text -->
-      <div class="relative">
+   <!-- header section -->
+   <header class="container mx-auto mt-14">
+    <div class="carousel w-full">
+      <!-- first slider -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="lg:w-full" />
         <div
-          class="bg-black absolute lg:right-0 lg: lg:bottom-0 lg:mr-8 lg:mb-8 sm:mt-2 rounded-xl"
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
         >
-          <div class="p-8">
-            <h3 class="text-white text-2xl font-extrabold mb-4">
-              Meet all the heroes from the field
-            </h3>
-            <p class="text-[#FFFFFF99] font-medium w-[500px]">
-              One of the best parts of my job is getting to meet amazing people
-              who are doing amazing things world better without fame or
-              recognition.
-            </p>
-          </div>
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
-    </header>
+      <!-- second slider -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+    </div>
+    <!-- header text -->
+    <div class="relative">
+      <div
+        class="bg-black mx-w-[335px] lg:mx-w-[576px] absolute lg:right-0 lg: lg:bottom-0 lg:mr-8 lg:mb-8 sm:mt-2 rounded-xl"
+      >
+        <div class="p-8">
+          <h3 class="text-white lg:text-2xl font-extrabold mb-4">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-[#FFFFFF99] font-medium lg:w-[500px]">
+            One of the best parts of my job is getting to meet amazing people
+            who are doing amazing things world better without fame or
+            recognition.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
 
     <main class="container mx-auto ">
       <!-- Professional Hockeys Club -->
-      <section class="pt-52 lg:pt-8">
+      <section class="pt-52 lg:pt-8 h-">
         <div class="lg:mt-32">
-          <h1 class="sm:text-base lg:text-4xl text-center text-[#131318] mb-6">
+          <h1 class="sm:text-base lg:text-4xl text-center text-[#131318] mt-9 lg:mt-0 mb-6">
             Professional Hockeys Club
           </h1>
-          <p class="text-[#13131899] sm:w-[292px] lg:w-[607px] mx-auto pb-4">
+          <p class="text-[#13131899] w-full mx-auto pb-4">
             The Professional Hockey Club, an emblem of excellence in the realm
             of ice hockey, stands as a testament to the sport's rich legacy and
             enduring passion. Renowned for
           </p>
         </div>
+
         <div
-          class="grid gap-40 grid-cols-1 lg:grid-cols-4 items-center justify-center lg:mt-12 lg:px-28"
+          class="flex flex-col lg:flex-row justify-center items-center lg:mt-12 lg:px-28"
         >
           <!-- porges-bar first -->
-          <div class="space-y-5">
-            <div
-              class="radial-progress text-[#ff4240] rotate-[140deg]"
-              style="--value: 87"
-              role="progressbar"
-            >
-              <span class="-rotate-[140deg]">87%</span>
+          <div>
+            <div class="space-y-5 ">
+              <div
+                class="radial-progress text-[#ff4240] rotate-[140deg]"
+                style="--value: 87"
+                role="progressbar"
+              >
+                <span class="-rotate-[140deg]">87%</span>
+              </div>
+              <h4 class="text-xl font-semibold">Prayer Facility</h4>
+              <p class="text-[#13131899]">
+                Amet consectetur. Condimentum dignissim adipiscing .
+              </p>
             </div>
-            <h4 class="text-xl font-semibold">Prayer Facility</h4>
-            <p class="text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing .
-            </p>
           </div>
           <!-- porges-bar second -->
           <div class="space-y-5">
@@ -233,12 +245,12 @@
             class="relative lg:w-[572px] lg:h-[335px] text-start col-span-3 overflow-hidden"
           >
             <img
-              class="w-full h-auto lg:w-[573px] lg:h-[338px] bg-cover bg-center"
+              class="w-full h-auto lg:w-[573px] lg:h-[338px] bg-cover bg-center rounded-xl overflow-hidden"
               src="Images/2.png"
               alt=""
             />
             <div
-              class="p-6 lg:pt-28 lg:pl-10 lg:pb-12 space-y-2 lg:space-y-5 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-50%] translate-y-[-50%] text-white bg-[#13131880]"
+              class=" overflow-hidden p-6 lg:pt-28 lg:pl-10 lg:pb-12 space-y-2 lg:space-y-5 absolute top-1/2 left-1/2 w-full h-full transform translate-x-[-50%] translate-y-[-50%] text-white bg-[#13131880]"
             >
               <h3
                 class="pt-5 text-xl font-medium text-white lg:text-3xl lg:font-extrabold"
@@ -431,12 +443,12 @@
       </section>
 
       <!-- Clients Question -->
-      <section class="bg-[#FFF]">
+      <section class="bg-[#FFF] ">
         <div class=" text-center mt-28 space-y-6">
           <h1 class=" text-4xl font-extrabold  ">Clients Question</h1>
-          <p class="lg:w-[600px] mx-auto text-[#0D0D1263] font-medium">It seems like your question is incomplete or unclear. Could you please provide more details or clarify your request regarding "hockey clients"?</p>
+          <p class="lg:w-[600px] mx-auto text-[#0D0D1263] font-medium pb-5 lg:pb-0">It seems like your question is incomplete or unclear. Could you please provide more details or clarify your request regarding "hockey clients"?</p>
         </div>
-        <div class="flex gap-10 flex-1 flex-col lg:flex-row ">
+        <div class="flex gap-10 flex-1 flex-col lg:flex-row mt-3 lg:mt-20">
           <div>
             <img src="Images/11.png" alt="">
           </div>
